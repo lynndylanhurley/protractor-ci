@@ -8,9 +8,9 @@ This project is **alpha** status. Use at your own risk.
 
 # Goals
 
-* Run all e2e tests against all target browsers.
-* Tests must be used with Travis CI.
-* Automatically mock all requests to external APIs.
+* Run E2E tests against all target browsers.
+* Run E2E tests on Travis CI.
+* Mock requests to external APIs (semi-automatically).
 
 # Installation
 
@@ -21,9 +21,16 @@ npm install protractor-ci --save-dev
 # Workflow
 
 1. [Run E2E tests against locally against live dev API](#run-local-e2e-tests)
+   This step records all external API requests for later playback.
+
 2. [Verify test playback](#playback-e2e-tests)
+   Uses the recorded mock requests from step 1.
+
 3. [Run E2E tests against Sauce Labs](#playback-e2e-tests-using-saucelabs)
+   Uses the recorded mock requests from step 1.
+
 4. [Run E2E tests on Travis CI on deployment](#travis-ci-setup)
+   Uses the recorded mock requests from step 1.
 
 # Run Local E2E Tests
 
