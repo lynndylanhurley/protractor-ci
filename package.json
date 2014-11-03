@@ -1,0 +1,39 @@
+{
+  "name": "protractor-ci",
+  "version": "0.0.1",
+  "description": "Easily run protactor using Travis CI and Sauce Labs.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lynndylanhurley/protractor-ci.git"
+  },
+  "keywords": [
+    "E2E",
+    "protractor",
+    "sauce",
+    "labs",
+    "travis",
+    "ci",
+    "nock"
+  ],
+  "devDependencies": {
+    "request": "~2.36.0",
+    "nock": "~0.48.2",
+    "q": "~1.0.1",
+    "mkdirp": "~0.5.0",
+    "sauce-connect-launcher": "~0.7.0",
+    "path": "~0.4.9",
+    "fs": "~0.0.2",
+    "gulp-util": "~3.0.1",
+    "coffee-script": "~1.8.0"
+  },
+  "author": "Lynn Dylan Hurley",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/lynndylanhurley/protractor-ci/issues"
+  },
+  "homepage": "https://github.com/lynndylanhurley/protractor-ci"
+}
