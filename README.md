@@ -1,8 +1,18 @@
+# Warning
+
+This project is **alpha** status. Use at your own risk.
+
 # Goals
 
 * Run all e2e tests against all target browsers.
 * Tests must be used with Travis CI.
 * Automatically mock all requests to external APIs.
+
+# Installation
+
+~~~bash
+npm install protractor-ci --save-dev
+~~~
 
 # Workflow
 
