@@ -1,3 +1,7 @@
+# Protractor CI
+
+[![npm version](https://badge.fury.io/js/protractor-ci.svg)](http://badge.fury.io/js/protractor-ci)
+
 # Warning
 
 This project is **alpha** status. Use at your own risk.
