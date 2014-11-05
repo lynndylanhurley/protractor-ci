@@ -1,6 +1,6 @@
 {
   "name": "protractor-ci",
-  "version": "0.0.2-alpha1",
+  "version": "0.0.2-alpha2",
   "description": "Easily run protactor using Travis CI and Sauce Labs.",
   "main": "src/index.js",
   "scripts": {
