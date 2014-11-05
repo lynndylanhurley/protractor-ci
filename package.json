@@ -19,7 +19,7 @@
     "ci",
     "nock"
   ],
-  "devDependencies": {
+  "dependencies": {
     "request": "~2.36.0",
     "nock": "~0.48.2",
     "q": "~1.0.1",
