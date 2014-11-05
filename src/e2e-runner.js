@@ -7,6 +7,7 @@ var request = require('request');
 var t       = require('gulp-util')
 var fs      = require('fs');
 var path    = require('path');
+var mkdirp  = require('mkdirp');
 
 // spawned processes
 var testServerFork    = null;
