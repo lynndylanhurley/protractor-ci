@@ -294,7 +294,7 @@ var setRecordingId = function(opts) {
   var dfd = Q.defer();
   var idFile = process.cwd() + '/' + path.dirname(opts.mockFile) + '/.nock-recording-id';
 
-  console.log('bang 1');
+  mkdirp.sync(path.dirname(opts.mockFile));
 
   if (opts.record) {
     // create net recording id
