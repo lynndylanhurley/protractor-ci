@@ -413,8 +413,10 @@ var testE2E = function(opts) {
 
 
 process.on('exit', function () {
-  t.log('@-->exiting with code', exitCode);
-  killE2EServer().then(function() { process.exit(exitCode); });
+  if (testServerFork) {
+    t.log('@-->exiting with code', exitCode);
+    killE2EServer().then(function() { process.exit(exitCode); });
+  }
 });
 
 
