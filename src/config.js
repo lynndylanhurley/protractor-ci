@@ -60,3 +60,8 @@ exports.config = {
     global.NOCK_RECORDING_ID = nockRecordingId;
   }
 };
+
+// override defaults
+JSON.parse(process.env.CONFIG).forEach(function(val, key) {
+  exports.config[key] = val;
+});

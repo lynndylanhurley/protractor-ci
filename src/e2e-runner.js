@@ -136,7 +136,7 @@ var killE2EServer = function() {
 }
 
 
-var runE2ETest = function(conf, browser, specs, port) {
+var runE2ETest = function(conf, browser, specs, port, config) {
   var dfd = Q.defer();
   var env = JSON.parse(JSON.stringify(process.env));
 
@@ -144,6 +144,7 @@ var runE2ETest = function(conf, browser, specs, port) {
   env.SPECS             = JSON.stringify(specs);
   env.TEST_PORT         = JSON.stringify(port);
   env.NOCK_RECORDING_ID = JSON.stringify(nockRecordingId);
+  env.CONFIG            = JSON.stringify(config);
 
   console.log('conf', conf);
 
@@ -405,7 +406,7 @@ var testE2E = function(opts) {
 
   if (opts.nodeApp) {
     // just fucking start fuck
-    startE2EServer(opts.nodeApp, opts.nodeHost, opts.nodePort, opts.mockFile);
+    startE2EServer(opts.nodeApp, opts.nodeHost, opts.nodePort, opts.mockFile, opts.config);
   }
 
   return dfd.promise;
